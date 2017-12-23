@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $Dashboard
+\*------------------------------------*/
+
+@import '../../styles/_variables.scss';
+
+.event {
+    display: flex;
+    flex-direction: row;
+    min-height: 40px;
+    border-bottom: 1px #D0D0D0 solid;
+    line-height: 40px;
+    overflow-wrap: break-word;
+
+    &__text {
+        flex: 8;
+    }
+
+    &__date {
+        flex: 2;
+    }
+}

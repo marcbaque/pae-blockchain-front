@@ -1,0 +1,21 @@
+<ng-sidebar-container>
+  <!-- A sidebar -->
+
+<ng-sidebar
+  showBackdrop="false"
+  [(opened)]="sidebar.opened"
+  [mode]="sidebar.mode"
+  [closeOnClickOutside]= "sidebar.closeOnClickOutside"
+  [autoCollapseWidth]="768">
+  <as-sidebar></as-sidebar>
+</ng-sidebar>
+
+<main
+  ng-sidebar-content
+  #pageContent
+  class="page-content">
+  <navbar [hidden]="!authGuard"></navbar>
+  <router-outlet></router-outlet>
+  <ng2-toasty [position]="'bottom-right'"></ng2-toasty>
+</main>
+</ng-sidebar-container>

@@ -1,0 +1,31 @@
+
+<div class="container-fluid wrap">
+    <div
+    fxLayout="row"
+    fxLayoutAlign="start"
+    fxLayoutWrap >
+        <div
+        class="box"
+        fxFlex="50"
+        fxFlex.lt-sm="100">
+
+        <card
+            [title]="'Titulo'"
+            [description]="'Descripcion'">
+            <div class="event__list">
+                <div *ngFor="let event of events" class="event">
+                    <div class="event__text">{{event.text}}</div>
+                    <div class="event__date">{{event.date}}</div>
+                </div>
+            </div>
+        </card>
+        </div>
+        <div
+        class="box"
+        fxFlex="50"
+        fxFlex.lt-sm="100">
+        <card>CDE</card>
+
+        </div>
+    </div>
+</div>

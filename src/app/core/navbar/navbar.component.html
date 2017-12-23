@@ -1,0 +1,16 @@
+<as-toolbar
+[shadow]=1
+[customClass]="toolBar.customClass"
+[brand]="toolBar.brand" >
+    <div class="center-content">
+        <div class="toolbar__title">{{toolBar?.title}}</div>
+    </div>
+    <div class="right-content">
+    </div>
+</as-toolbar>
+<as-navmenu
+[open]="menuOpen"
+[collapsable]="true"
+[navs]="navList"
+[shadow]="'3'"
+[showIcons]="false"></as-navmenu>

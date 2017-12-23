@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              #212121 !default;
+$gray:                   #666 !default;
+$gray-light:             #bbb !default;
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$white:                  #f3f3f3 !default;
+
+$brand-app:             rgb(120, 79, 216) !default;
+$brand-app-dark:       rgb(79, 27, 203) !default;
+$brand-app-light:        #aab7be !default;
+$brand-primary:         rgb(120, 79, 216) !default;
+$brand-primary-dark:   #501ccc !default;
+$brand-primary-light:    #3fc3d1 !default;
+$brand-secondary:       #501ccc !default;
+$brand-ternary:         #1dacbf !default;
+$brand-ternary-dark:    #949494 !default;
+$brand-ternary-light:   #f2f2f2 !default;
+
+$brand-marketing:         #81caa4 !default;
+$brand-marketing-dark:    #55a981 !default;
+$brand-marketing-light:   #b0dcc5 !default;
+
+$brand-design:         #fcbc6b !default;
+$brand-design-dark:    #bf8e50 !default;
+$brand-design-light:   #fed6a7 !default;
+
+$brand-developer:         #dc736f !default;
+$brand-developer-dark:    #a65854 !default;
+$brand-developer-light:   #eaaba9 !default;
+
+$brand-success:         #4CAF50 !default;
+$brand-info:            #9C27B0 !default;
+$brand-warning:         #ff9800 !default;
+$brand-danger:          #e51c23 !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;;
+$font-family-base:       $font-family-sans-serif;
+//== Sidebar
+//
+//##
+
+$sidebar-bg: $brand-app-dark !default;
+$sidebar-width: 250px !default;
+$sidebar-min-width: $sidebar-width !default;
+$sidebar-profile-height: 200px !default;
+$sidebar-profile-bg: $brand-app-dark !default;
+$sidebar-avatar-border-radius: 50%;
+
+// Ngx- Canaima
+$as-card-illustration-height: 200px;
+$navbar-height: 54px;

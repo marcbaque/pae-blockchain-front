@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    $Dashboard
+\*------------------------------------*/
+
+@import '../../styles/_variables.scss';
+
+.dashboard {
+
+    &__form {
+        width: 100%;
+        padding: 0 2.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__field {
+            width: 100%;
+        }
+    
+        &__submit {
+            align-self: flex-end;
+        }
+    }
+  
+}

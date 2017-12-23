@@ -1,0 +1,105 @@
+@import "../../../styles/styles.scss";
+
+.sidebar {
+    height: 100%;
+    min-width: $sidebar-width;
+    width: $sidebar-width;
+    background-color: $sidebar-bg;
+    display: flex;
+    flex-direction: column;
+    &__header {
+        height: 30%;
+        margin: 5% 0;
+        background-color: $brand-app-dark;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 100;
+
+        &__logo {
+            height: 75%;
+        }
+    }
+    &__logo {
+        height: 35px;
+    }
+    &__body {
+        flex: 6;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__profile {
+        background: $sidebar-profile-bg;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: $sidebar-profile-height;
+    }
+    &__avatar {
+        background: url('../../../assets/img/profile.png');
+        width: 90px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: $sidebar-avatar-border-radius;
+        border: 2px solid $gray-lighter;
+    }
+    &__nav {
+        width: 100%;
+        div a {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            color: $gray-lighter;
+            font-size: 16px;
+            border-left: 4px solid transparent;
+            i {
+            font-size: 18px;
+            margin-right: 1rem;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+            &.active {
+                background-color: lighten($brand-app-dark, 10%);
+            }
+        }
+    }
+    &__subnav {
+
+        div a {
+            display: flex;
+            align-items: center;
+            padding: .5rem .25rem .5rem 2rem;
+            color: $gray-lighter;
+            font-size: 14px;
+            background-color: darken($brand-primary, 8%);
+            i {
+            font-size: 20px;
+            margin-right: 1rem;
+            }
+        }
+    }
+    &.ng-sidebar--over {
+      box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
+    }
+    &__footer {
+        display: flex;
+        justify-content: center;
+        .version {
+            background-color: darken($brand-app-dark, 10%);
+            padding: .25rem;
+            text-align: center;
+            width: 100%;
+            color: white;
+        }
+    }
+}

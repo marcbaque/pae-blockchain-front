@@ -1,0 +1,31 @@
+
+<div class="container-fluid wrap">
+  <div
+  fxLayout="row"
+  fxLayoutAlign="start"
+  fxLayoutWrap >
+      <div
+      class="box"
+      fxFlex="50"
+      fxFlex.lt-sm="100">
+        <card
+          [title]="'Crear evento'">
+          <form class="dashboard__form">
+            <mat-form-field class="dashboard__form__field">
+              <input matInput [(ngModel)]="eventForm.name" name="name" placeholder="Nombre" value="">
+            </mat-form-field>
+            <button mat-raised-button class="dashboard__form__submit" color="primary" (click)="createEvent()">Crear</button>
+          </form>
+        </card>
+      </div>
+      <div
+      class="box"
+      fxFlex="50"
+      fxFlex.lt-sm="100">
+      <card
+        [title]="''">
+        
+      </card>
+      </div>
+  </div>
+</div>
