@@ -4,28 +4,60 @@
     fxLayout="row"
     fxLayoutAlign="start"
     fxLayoutWrap >
+ 
         <div
         class="box"
-        fxFlex="50"
+        fxFlex="33"
         fxFlex.lt-sm="100">
+
+            <card
+                [title]="'Usuarios'"
+                [centered]="true">
+                <div class="event-count">{{usersCount}}</div>
+            </card>
+        </div>
+
+        <div
+        class="box"
+        fxFlex="33"
+        fxFlex.lt-sm="100">
+
+            <card
+                [title]="'Organizadores'"
+                [centered]="true">
+                <div class="event-count">{{organizersCount}}</div>
+            </card>
+        </div>
+
+        <div
+        class="box"
+        fxFlex="33"
+        fxFlex.lt-sm="100">
+
+            <card
+                [title]="'Eventos'"
+                [centered]="true">
+                <div class="event-count">{{eventsCount}}</div>
+            </card>
+        </div>
+
+        <div
+        class="box"
+        fxFlex="100">
 
         <card
-            [title]="'Titulo'"
-            [description]="'Descripcion'">
-            <div class="event__list">
+            [title]="'Logs'"
+            [centered]="false">
+            <div *ngIf="events.length > 0" class="event__list">
                 <div *ngFor="let event of events" class="event">
                     <div class="event__text">{{event.text}}</div>
-                    <div class="event__date">{{event.date}}</div>
+                    <time class="event__date">{{event.date.getTime() | relativeTime}}</time>
                 </div>
             </div>
+            <div class="event__list" *ngIf="events.length === 0">
+                Aún no hay eventos
+            </div>
         </card>
-        </div>
-        <div
-        class="box"
-        fxFlex="50"
-        fxFlex.lt-sm="100">
-        <card>CDE</card>
-
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <div class="card__container">
-    <div *ngIf="title" class="card__title">
-        {{title}}
+    <div class="card__title" [ngClass]="{'card__title__centered': centered}"> 
+        {{title}} 
     </div>
     <div class="card__description">
         {{description}}

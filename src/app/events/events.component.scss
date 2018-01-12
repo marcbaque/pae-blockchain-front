@@ -12,11 +12,18 @@
     line-height: 40px;
     overflow-wrap: break-word;
 
+    &-count {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
     &__text {
         flex: 8;
     }
 
     &__date {
-        flex: 2;
+        flex: 5;
+        font-size: 11px;
     }
 }

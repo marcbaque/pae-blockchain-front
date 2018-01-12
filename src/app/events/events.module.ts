@@ -6,6 +6,7 @@ import {
 import { ROUTES } from './events.routes';
 import { SharedModule } from '../shared/shared.module';
 import { EventsComponent } from 'app/events/events.component';
+import { RelativeTimeFilterPipe } from 'app/events/date.pipe';
 @NgModule({
     imports: [
         SharedModule,
@@ -16,6 +17,7 @@ import { EventsComponent } from 'app/events/events.component';
         EventsComponent
     ],
     declarations: [
+        RelativeTimeFilterPipe,
         EventsComponent
     ],
     providers: [],

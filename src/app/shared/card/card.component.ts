@@ -18,6 +18,7 @@ import { Input } from '@angular/core';
 export class CardComponent implements OnInit {
     @Input() public title: string;
     @Input() public description: string;
+    @Input() public centered: boolean = false;
     constructor(
         private router: Router,
         private route: ActivatedRoute
