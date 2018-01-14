@@ -12,6 +12,11 @@
     line-height: 40px;
     overflow-wrap: break-word;
 
+    &__list {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     &-count {
         text-align: center;
         font-size: 32px;

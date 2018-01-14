@@ -51,7 +51,6 @@
             <div *ngIf="events.length > 0" class="event__list">
                 <div *ngFor="let event of events" class="event">
                     <div class="event__text">{{event.text}}</div>
-                    <time class="event__date">{{event.date.getTime() | relativeTime}}</time>
                 </div>
             </div>
             <div class="event__list" *ngIf="events.length === 0">
